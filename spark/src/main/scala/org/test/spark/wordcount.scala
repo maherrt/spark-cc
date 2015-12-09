@@ -20,8 +20,8 @@ object wordcount {
       (word,1) //Return a key/value tuple, with the word as key and 1 as value
     }
     .reduceByKey(_ + _) //Sum all of the value with same key
-    .saveAsTextFile("README.counts.txt") //Save to a text file
-
+    .saveAsTextFile("README.counts1.txt") //Save to a text file
+    print("test 1")
     //Stop the Spark context
     sc.stop
 

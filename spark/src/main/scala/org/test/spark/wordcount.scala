@@ -21,7 +21,7 @@ object wordcount {
     }
     .reduceByKey(_ + _) //Sum all of the value with same key
     .saveAsTextFile("README.counts1.txt") //Save to a text file
-    print("test 1")
+    print("test 1 \n")
     //Stop the Spark context
     sc.stop
 
